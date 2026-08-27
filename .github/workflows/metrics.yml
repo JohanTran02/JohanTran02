@@ -18,9 +18,9 @@ jobs:
             filename: general.svg
             output_action: gist
             token: ${{ secrets.METRICS_TOKEN }}
-            base: header, activity, repositories, metadata
+            base: header, activity, repositories
             base_indepth: yes
-            config_order: base.header, isocalender, languages
+            config_order: base.header, isocalender, languages, activity
             config_timezone: Europe/Stockholm
             plugin_isocalendar: yes
             plugin_isocalendar_duration: half-year
@@ -29,8 +29,15 @@ jobs:
             plugin_languages_analysis_timeout_repositories: 7.5
             plugin_languages_colors: github
             plugin_languages_ignored: html, css, dockerfile
+            plugin_languages_details: percentage
             plugin_languages_indepth: yes
             commits_authoring: firstname lastname, username, username@users.noreply.github.com
             plugin_languages_limit: 5
             plugin_languages_recent_days: 14
             plugin_languages_recent_load: 300
+            plugin_activity: yes
+            plugin_activity_days: 14
+            plugin_activity_filter: all
+            plugin_activity_limit: 5
+            plugin_activity_load: 300
+            plugin_activity_visibility: public
