@@ -27,8 +27,9 @@ jobs:
             plugin_languages_analysis_timeout_repositories: 7.5
             plugin_languages_ignored: html, css, dockerfile
             plugin_languages_sections: most-used, recently-used
-            plugin_languages_details: percentage
+            plugin_languages_details: percentage, bytes-size
             plugin_languages_indepth: yes
             plugin_languages_limit: 5
             plugin_languages_recent_days: 14
             plugin_languages_recent_load: 300
+            config_padding: 0, 10 + 10%
