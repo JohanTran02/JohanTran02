@@ -32,4 +32,4 @@ jobs:
             plugin_languages_limit: 5
             plugin_languages_recent_days: 14
             plugin_languages_recent_load: 300
-            config_padding: 0, 10 + 10%
+            config_padding: 10, 10 + 10%
