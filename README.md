@@ -1,1 +1,1 @@
-[<img src="/general.svg">](#)
+[<img align="right" src="/general.svg">](#)
